@@ -19,7 +19,8 @@ palla["marca"] = "michelin";
 
 console.log("Palla: ", palla);
 
-//Facciamo inserire all'utente la prima proprietà
+//**************************** Proprietà dinamica su oggetto (solo con quadre)
+//Facciamo inserire all'utente una nuova proprietà
 let nomeProprieta = prompt("quale nuova proprietà vuoi attribuire alla palla?");
 let valoreProprieta = prompt("inserisci una nuova proprietà per la palla");
 
@@ -36,21 +37,22 @@ for (const key in palla) {
 // palla["nomeProprieta"] = valoreProprieta;
 // palla.nomeProprieta = valoreProprieta;
 
-	
-// const classi = [
-//     ['Mattia', 'Giacomo'], //classe 95
-//     ['Martina', 'Giorgia'] //classe 96
-// ];
+//**************************** Array di array
+const classi = [
+    ['Mattia', 'Giacomo'], //classe 95
+    ['Martina', 'Giorgia'] //classe 96
+];
 
-// const classe95 = classi[0];
-// console.log( classe95 );
+const classe95 = classi[0];
+console.log( classe95 );
 
-// const primoStudente = classe95[0];
+const primoStudente = classe95[0];
 
-// console.log( primoStudente );
-// console.log( classi[0][0] );
+console.log( primoStudente );
+console.log( classi[0][0] );
 
 
+//**************************** Array di oggetti
 const studenti = [
     { nome: "Luca", eta: 33, voto: 9 },
     { nome: "Marco", eta: 25, voto: 10 }
